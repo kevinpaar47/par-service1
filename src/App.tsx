@@ -103,6 +103,10 @@ const App: React.FC = () => {
   const [parts, setParts] = useState<Part[]>(MOCK_PARTS);
   const [transactions, setTransactions] = useState<InventoryTransaction[]>(MOCK_TRANSACTIONS);
 
+  // New State for Persistence
+  const [repairs, setRepairs] = useState<RepairJob[]>([]);
+  const [renovationRequests, setRenovationRequests] = useState<RenovationRequest[]>([]);
+
   const [invoices, setInvoices] = useState<Invoice[]>(MOCK_INVOICES);
   const [warranties, setWarranties] = useState<WarrantyRecord[]>(MOCK_WARRANTIES);
   
